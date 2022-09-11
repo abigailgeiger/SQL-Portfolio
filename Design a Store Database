@@ -1,0 +1,44 @@
+CREATE TABLE Cup_Store (id INTEGER PRIMARY KEY AUTOINCREMENT,
+name TEXT,
+size TEXT,
+color TEXT,
+design TEXT,
+price INTEGER,
+material TEXT);
+INSERT into "Cup_Store" (name, size, color, design, price,
+material) values ("Cup one", "S", "Purple", "Spiderman", "5", "Glass");
+INSERT into "Cup_Store" (name, size, color, design, price,
+material) values ("Cup two", "M", "Orange", "Thor", "7",
+"Stainless Steel");
+INSERT into "Cup_Store" (name, size, color, design, price,
+material) values ("Cup three", "L", "Pink", "Stranger Things",
+"10", "Copper");
+INSERT into "Cup_Store"(name, size, color, design, price,
+material)  values ("Cup four", "XL", "Brown", "Wookiee", "12", "Stainless Steel");
+INSERT into "Cup_Store"(name, size, color, design, price, material)  values ("Cup five", "S", "Green", "Ozark", "5", "Plastic");
+INSERT into "Cup_Store"(name, size, color, design, price, material)  values ("Cup six", "M", "Black", "Batman", "7", "Glass");
+INSERT into "Cup_Store" (name, size, color, design, price,
+material) values ("Cup seven", "L", "White", "Ghost", "10", "Plastic");
+INSERT into "Cup_Store"(name, size, color, design, price,
+material)  values ("Cup eight", "XL", "Purple", "Aladdin", "12", "Glass");
+INSERT into "Cup_Store" (name, size, color, design, price,
+material) values ("Cup nine", "S", "Blue", "Bluey", "5",
+"Stainless Steel");
+INSERT into "Cup_Store" (name, size, color, design, price,
+material) values ("Cup ten", "M", "Orange", "Lumberjack", "7", "Copper");
+INSERT into "Cup_Store" (name, size, color, design, price,
+material) values ("Cup eleven", "L", "Grey", "Greys Anatomy", "10", "Glass");
+INSERT into "Cup_Store" (name, size, color, design, price,
+material) values ("Cup twelve", "XL", "Gold", "C3PO", "12",
+"Gold");
+INSERT into "Cup_Store" (name, size, color, design, price,
+material) values ("Cup thirteen", "S", "Periwinkle", "Baby Yoda", "5", "Glass");
+INSERT into "Cup_Store" (name, size, color, design, price,
+material) values ("Cup fourteen", "M", "Red", "Stripes", "7", "Stainless Steel");
+INSERT into "Cup_Store" (name, size, color, design, price,
+material) values ("Cup fifteen", "L", "Yellow", "Polka dots", "10", "Glass");
+INSERT into "Cup_Store" (name, size, color, design, price,
+material) values ("Cup sixteen", "XL", "Black", "Stripes", "12",
+"Glass");
+SELECT price FROM Cup_Store WHERE price < "12" ORDER BY price; 
+
