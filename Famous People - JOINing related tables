@@ -1,0 +1,82 @@
+CREATE TABLE "Famous_People" (id INTEGER PRIMARY KEY AUTOINCREMENT, Fullname TEXT, 
+Birth_Date INTEGER, 
+Birth_Place TEXT,
+Years_Active INTEGER);
+
+INSERT INTO famous_people (fullname, birth_date, birth_place, years_active) VALUES ("Denzel Hayes Washington Jr", 
+"December 28 1954", "Mount Vernon NY", "1975-present");
+INSERT INTO famous_people (fullname, birth_date, birth_place, years_active) VALUES ("Johnny Christopher Depp II", "June 9 1963", "Owensboro KY", "1984-present");
+INSERT INTO famous_people (fullname, birth_date, birth_place, years_active) VALUES ("Amber Laura Heard", "April 22 1986", 
+"Austin TX", "2003-present");
+INSERT INTO famous_people (fullname, birth_date, birth_place, years_active) VALUES ("Chadwick Aaron Boseman", "November 29 1976", "Anderson South CA", "1993-2020");
+INSERT INTO famous_people (fullname, birth_date, birth_place, years_active) VALUES ("Jennifer Joanna Anniston", 
+"February 11 1969", "Los Angeles CA", "1987-present");
+INSERT INTO famous_people (fullname, birth_date, birth_place, years_active) VALUES ("William Bradley Pitt", "December 18 1963", "Shawnee OK", "1987-present");
+INSERT INTO famous_people (fullname, birth_date, birth_place, years_active) VALUES ("Angelina Jolie Voight", "June 4 1975", 
+"Los Angeles CA", "1982-present");
+INSERT INTO famous_people (fullname, birth_date, birth_place, years_active) VALUES ("Billy Bob Thornton", "June 9 1963", 
+"Hot Springs AR", "1974-present");
+INSERT INTO famous_people (fullname, birth_date, birth_place, years_active) VALUES ("Benjamin Geza Affleck-Boldt", 
+"August 15 1972", "Berkeley CA", "1981-present");
+INSERT INTO famous_people (fullname, birth_date, birth_place, years_active) VALUES ("Jennifer Anne Garner", "April 17 1972", "Houston TX", "1995-present");
+INSERT INTO famous_people (fullname, birth_date, birth_place, years_active) VALUES ("Scott Kellerman Foley", "July 15 1972", "Kansas City KS", "1995-present");
+INSERT INTO famous_people (fullname, birth_date, birth_place, years_active) VALUES ("Jennifer Lynn Lopez", "July 24 1969", 
+"New York City NY", "1986-present");
+INSERT INTO famous_people (fullname, birth_date, birth_place, years_active) VALUES ("Robert Anthony De Niro Jr", 
+"August 17 1943", "New York City NY", "1963-present");
+INSERT INTO famous_people (fullname, birth_date, birth_place, years_active) VALUES ("Justin Paul Theroux", "August 10 1971", "Washington DC", "1995-present");
+INSERT INTO famous_people (fullname, birth_date, birth_place,
+years_active) VALUES ("Viola Davis", "August 11 1965", 
+"St Matthews SC", "1992-Present");
+INSERT INTO famous_people (fullname, birth_date, birth_place, 
+years_active) VALUES ("Daniel Jason Sudeikis", "September 18 1975",
+"Fairfax VA", "1997-Present");
+INSERT INTO famous_people (fullname, birth_date, birth_place,
+years_active) VALUES ("Olivia Jane Cockburn Wilde", 
+"March 10 1984", "New York City NY", "2003-Present");
+INSERT INTO famous_people (fullname, birth_date, birth_place, 
+years_active) VALUES ("Clea Helen D'Etienne DuVall", "September 25 1977", "Los Angeles CA", "1996-Present");
+
+CREATE TABLE "Films" (Actors_id INTEGER, 
+Title TEXT, 
+Released INTEGER, 
+Worldwide_Gross INTEGER);
+
+INSERT INTO films VALUES ("1", "Deja Vu", "2006", "180557550");
+INSERT INTO films VALUES ("1", "Fences", "2016", "64414761");
+INSERT INTO films VALUES ("2", "Black Mass", "2015", "99775678");
+INSERT INTO films VALUES ("2", "Once Upon a Time in Mexico", "2003", "98769390");
+INSERT INTO films VALUES ("7", "Mr and Mrs Smith", "2005", "487287646");
+INSERT INTO films VALUES ("18", "Girl, Interrupted", "1999", "48350205");
+INSERT INTO films VALUES ("10", "13 Going on 30", "2004", 
+"96455697");
+INSERT INTO films VALUES ("3", "The Rum Diary", "2011", 
+"30134958");
+INSERT INTO films VALUES ("3", "Aquaman", "2018", "1148528393");
+INSERT INTO films VALUES ("4", "Black Panther", "2018", 
+"1347597973");
+INSERT INTO films VALUES ("4", "Captain American: Civil War", "2016", "1153337496");
+INSERT INTO films VALUES ("5", "We're the Millers", "2013", "269994119");
+INSERT INTO films VALUES ("16", "Horrible Bosses", "2011", "209838559");
+INSERT INTO films VALUES ("6", "Moneyball", "2011", "110206216");
+INSERT INTO films VALUES ("7", "Salt", "2010", "293503354");
+INSERT INTO films VALUES ("8", "Armageddon", "1998", 
+"553907788");
+INSERT INTO films VALUES ("17", "Drinking Buddies", "2013", "401914");
+INSERT INTO films VALUES ("18", "Argo", "2012", "232325503");
+INSERT INTO films VALUES ("9", "Daredevil", "2003", 
+"179179718");
+INSERT INTO films VALUES ("13", "Dirty Grandpa", "2016", 
+"94073028");
+INSERT INTO films VALUES ("14", "Wanderlust", "2012", 
+"23812816");
+INSERT INTO films VALUES ("15", "The Woman King", "2022", 
+"37599000");
+INSERT INTO films VALUES ("14", "Megamind", "2010", "321885765");
+INSERT INTO films VALUES ("15", "Lila and Eve", "2015", 
+"179807");
+INSERT INTO films VALUES ("11", "Below", "2002", "2622015");
+
+SELECT * FROM famous_people
+      JOIN films
+      ON famous_people.id = films.actors_id;
