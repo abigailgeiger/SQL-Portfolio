@@ -1,0 +1,44 @@
+CREATE TABLE Period_Data (id INTEGER PRIMARY KEY AUTOINCREMENT, 
+Name TEXT, Temperature INTEGER, Flow TEXT, Symptoms TEXT, Mood TEXT);
+
+INSERT INTO Period_Data (Name, Temperature, Flow, Symptoms, Mood) values ("Eiley", "98.6", "Light", "Cramps", "Happy");
+INSERT INTO Period_Data (Name, Temperature, Flow, Symptoms, Mood) values ("Ronny", "97.8", "Medium", "Cramps/Bloating", "Tired");
+INSERT INTO Period_Data (Name, Temperature, Flow, Symptoms, Mood) values ("Lyris", "98.5", "Light", "Bloating/Dizziness", "Angry");
+INSERT INTO Period_Data (Name, Temperature, Flow, Symptoms, Mood) values ("Phaedra", "96.6", "Heavy", "Cramps", "Happy");
+INSERT INTO Period_Data (Name, Temperature, Flow, Symptoms, Mood) values ("Avila", "98.8", "Light", "Dizziness", "Confused");
+INSERT INTO Period_Data (Name, Temperature, Flow, Symptoms, Mood) values ("Eiley", "98.7", "Heavy", "Cramps/Bloating/Dizziness",
+"Sad");
+INSERT INTO Period_Data (Name, Temperature, Flow, Symptoms, Mood) values ("Ronny", "94.3", "Medium", "Dizziness/Bloating", "Happy");
+INSERT INTO Period_Data (Name, Temperature, Flow, Symptoms, Mood) values ("Lyris", "98.9", "Heavy", "Dizzniness/Cramps", "Happy");
+INSERT INTO Period_Data (Name, Temperature, Flow, Symptoms, Mood) values ("Phaedra", "99.9", "Medium", "Cramps/Bloating", "Sad");
+INSERT INTO Period_Data (Name, Temperature, Flow, Symptoms, Mood) values ("Avila", "98.6", "Heavy", "Cramps", "Angry");
+INSERT INTO Period_Data (Name, Temperature, Flow, Symptoms, Mood) values ("Eiley", "93.7", "Medium", "Cramps", "Happy");
+INSERT INTO Period_Data (Name, Temperature, Flow, Symptoms, Mood) values ("Ronny", "98.9", "Light", "Dizziness", "Confused");
+INSERT INTO Period_Data (Name, Temperature, Flow, Symptoms, Mood) values ("Lyris", "96.8", "Heavy", "Bloating/Dizziness", "Tired");
+INSERT INTO Period_Data (Name, Temperature, Flow, Symptoms, Mood) values ("Phaedra", "98.5", "Heavy", "Dizziness", "Happy");
+INSERT INTO Period_Data (Name, Temperature, Flow, Symptoms, Mood) values ("Avila", "96.6", "Medium", "Cramps/Dizziness/Bloating", "Tired");
+INSERT INTO Period_Data (Name, Temperature, Flow, Symptoms, Mood) values ("Eiley", "99.3", "Light", "Cramps/Bloating/Dizziness", "Sad");
+INSERT INTO Period_Data (Name, Temperature, Flow, Symptoms, Mood) values ("Ronny", "95.4", "Heavy", "Bloating", "Angry");
+INSERT INTO Period_Data (Name, Temperature, Flow, Symptoms, Mood) values ("Lyris", "98.1", "Medium", "Cramps/Bloating", "Happy");
+INSERT INTO Period_Data (Name, Temperature, Flow, Symptoms, Mood) values ("Phaedra", "98.6", "Heavy", "Cramps", "Happy");
+INSERT INTO Period_Data (Name, Temperature, Flow, Symptoms, Mood) values ("Avila", "98.2", "Light", "Bloating", "Tired");
+INSERT INTO Period_Data (Name, Temperature, Flow, Symptoms, Mood) values ("Eiley", "98.9", "Heavy", "Dizziness", "Happy");
+INSERT INTO Period_Data (Name, Temperature, Flow, Symptoms, Mood) values ("Ronny", "94.7", "Medium", "Cramps/Bloating", "Angry");
+INSERT INTO Period_Data (Name, Temperature, Flow, Symptoms, Mood) values ("Lyris", "95.9", "Heavy", "Bloating/Dizziness", "Happy");
+INSERT INTO Period_Data (Name, Temperature, Flow, Symptoms, Mood) values ("Phaedra", "94.9", "Medium", "Dizziness", "Sad");
+INSERT INTO Period_Data (Name, Temperature, Flow, Symptoms, Mood) values ("Avila", "96.2", "Heavy", "Cramps", "Happy");
+INSERT INTO Period_Data (Name, Temperature, Flow, Symptoms, Mood) values ("Eiley", "98.1", "Light", "Dizziness/Cramps", "Sad");
+INSERT INTO Period_Data (Name, Temperature, Flow, Symptoms, Mood) values ("Ronny", "98.3", "Light", "Bloating", "Sad");
+INSERT INTO Period_Data (Name, Temperature, Flow, Symptoms, Mood) values ("Lyris", "99.4", "Heavy", "Cramps", "Happy");
+INSERT INTO Period_Data (Name, Temperature, Flow, Symptoms, Mood) values ("Phaedra", "98.5", "Heavy", "Dizziness", "Angry");
+INSERT INTO Period_Data (Name, Temperature, Flow, Symptoms, Mood) values ("Avila", "97.9", "Heavy", "Cramps", "Happy");
+
+UPDATE period_data SET Name = "Ronnie" WHERE Name = "Ronny";
+
+SELECT * FROM period_data;
+
+DELETE FROM period_data WHERE Name = "Phaedra";
+
+SELECT * FROM period_data;
+
+
