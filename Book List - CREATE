@@ -1,5 +1,0 @@
-CREATE table Books (id text primary key, name text, Author text, rating integer);
-INSERT into books values(1, "The Appeal","John Grisham", 5);
-INSERT into books values (2, "Alice in Wonderland", "Lewis Carroll", 5);
-INSERT into books values (3, "Dune","Frank Herbert",5);
-INSERT into books values (4, "Black Sun", "Rebecca Roanhorse",5);
